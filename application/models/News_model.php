@@ -32,14 +32,12 @@ class News_model extends CI_Model {
         );
 
 
-        if ($slug !== false)
+        if ($this->db->insert('sm18_news', $data))
         {//data inserted, pass back slug
             return $slug;
-        } else {
+        } else {//failre, pass back false
             return false;
         }
-
-        return $this->db->insert('sm18_news', $data);
     }
 
 }
