@@ -1,5 +1,5 @@
 <?php
-//application/models/News_model.php
+//application/models/Pics_model.php
 class Pics_model extends CI_Model {
 
     public function __construct()
@@ -33,26 +33,4 @@ class Pics_model extends CI_Model {
         $query = $this->db->get_where('sm18_pics', array('slug' => $slug));
         return $query->row_array();
     }
-
-    // public function set_news()
-    // {
-    //     $this->load->helper('url');
-    //
-    //     $slug = url_title($this->input->post('title'), 'dash', TRUE);
-    //
-    //     $data = array(
-    //         'title' => $this->input->post('title'),
-    //         'slug' => $slug,
-    //         'text' => $this->input->post('text')
-    //     );
-    //
-    //
-    //     if ($this->db->insert('sm18_news', $data))
-    //     {//data inserted, pass back slug
-    //         return $slug;
-    //     } else {//failre, pass back false
-    //         return false;
-    //     }
-    // }
-
 }

@@ -1,5 +1,5 @@
 <?php
-//application/view/news/index.php
+//application/view/pics/index.php
 
 $this->load->view($this->config->item('theme') . 'header');
 

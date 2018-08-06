@@ -1,5 +1,5 @@
 <?php
-//applcation/views/news/view.php
+//applcation/views/pics/view.php
 
 $this->load->view($this->config->item('theme') . 'header');
 
@@ -16,16 +16,6 @@ foreach ($pics as $pic):
         <div class="main">
                 <?php echo "<img title='" . $pic->title . "' src='" . $photo_url . "' />" ?>
         </div>
-        <!-- <p><a href="<?php //echo site_url('pics/'.$pic['slug']); ?>">View pic</a></p> -->
-
-
-                            <!-- <h3><?php //echo $news_item['title']; ?></h3>
-                            <div class="main">
-                                    <?php //echo $news_item['text']; ?>
-                            </div>
-                            <p><a href="<?php //echo site_url('news/'.$news_item['slug']); ?>">View article</a></p> -->
-
-
 
 <?php endforeach;
 
